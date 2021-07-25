@@ -3,11 +3,15 @@ html,body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 .container {
     overflow-y: hidden;
     overflow-x: hidden;
- }
+}
+.dropdown-toggle::after {
+    display:none;
+}
 
 h5{
     color: #763de7;
@@ -127,7 +131,7 @@ p{
 }
 
 .header-content .row{
-    height: 700px;
+    /* height: 700px; */
     padding: 50px 30px;
 }
 
@@ -245,13 +249,17 @@ p{
     width: fit-content;
 }
 .widgets .tasks{
-    margin:20px 20px 0 0;
+    margin:20px 0 0 0;
     padding: 10px 30px;
     background-color: #fff; 
     border-radius: 15px;
+    display: -webkit-box;
 }
 .tasks p{
     padding-top: 10px;
+}
+.tasks img{
+    margin-right: 32px;
 }
 /* ----------- end of section-1---------------- */
 /*------------------------ SECTION 2--------------------------------------- */
@@ -396,6 +404,16 @@ ul {
 .logos img:hover{
     opacity: 1;
 }
+.price-rate h2{
+    color: #040222;
+    font-size: 72px;
+    font-weight: 900;
+}
+.price-rate span{
+    color: #040222;
+    font-size: 72px;
+    font-weight: 900;
+}
 
 /* ------------------END OF SECTION FIVE--------------- */
 
@@ -534,7 +552,7 @@ input::-webkit-input-placeholder {
     line-height: 4;
 }
 .subscribe button{
-    padding: 15px 68px;
+    padding: 15px 60px;
     border: 1px solid #8be9e1;
     background: #8be9e1;
     color: #301c6b;
@@ -543,3 +561,649 @@ input::-webkit-input-placeholder {
 /* --------------------------END OF FOOTER--------------------- */
 
 
+/* ------------------------------MEDIA QUERIES-------------------------- */
+@media screen and (max-width:320px) {
+    h2{
+        font-size: 28px;
+        padding: 20px 0px;
+    }
+    .logo{
+        height: auto;
+    }
+    .header{
+        height: auto;
+    }
+    .buy{
+        display: none;
+    }
+    .header .col-lg-8{
+        display: none
+    }
+    .header-image{
+        padding-bottom: 200px;
+    }
+    .header-image img {
+        max-width: 100%;
+        height: 160px;
+        width: fit-content;
+    }
+    .header-content .row{
+        padding: 0px 0px;
+    }
+    .content{
+        text-align: center;
+    }
+    .icon-text{
+        padding: 0;
+        margin-right: 15px;
+    }
+    /* section 1 */
+    .side-image{
+        display: none;
+    }
+    .intro {
+        padding: 70px 0px 0px;
+    }
+    .back-ground{
+        padding: 180px 0px;
+    }
+    .inner-image-1 {
+        left: 20px;
+        top: 10px;
+    }
+    .inner-image-1 img {
+        max-width: 90%;
+      
+    }
+    .inner-image-2 {
+        left: 70px;
+        top: 100px;
+    }
+    .inner-image-2 img {
+        max-width: 100%;
+    }
+    .intro .context{
+        padding:60px 10px 40px;
+    }
+    /* section 1 */
+/* section 2 */
+.features{
+    padding: 60px 0px 0px;
+}
+.features .card{
+    padding: 0;
+    margin:20px 0;
+}
+/* end of section 2 */
+/* section 3 */
+.additional-features{
+    padding: 100px 30px;
+}
+.additional-features .context {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* end of section 3 */
+/* section 4 */
+
+.img-pos {
+    padding: 150px 20px;
+}
+.feature-image-1{
+    max-width: 90%;
+    right: -25px;
+}
+.feature-image-2{
+    top: 40px;
+    max-width: 85%;
+}
+/* end of section 4 */
+/* section 5 */
+.reviews{
+    padding: 130px 30px 80px;
+}
+.reviews .p-5{
+    padding: 15px !important;
+}
+.background{
+    text-align: center;
+}
+.background h2{
+    font-size: 22px;
+    margin: 20px 0px;
+}
+/* end of section 5 */
+/* section 7 */
+.pricing-context{
+    padding: 70px 0px;
+}
+.pricing-context .card{
+    margin:0 0 20px;
+    padding: 25px 35px 35px;
+}
+.pricing-context .card-body{
+    padding: 0;
+}
+.logos{
+    margin: 0 !important;
+}
+.logos .row{
+    padding: 0 !important;
+}
+    /* end of section 7 */
+.features .card{
+    padding: 0;
+}
+.feature-context h2{
+    padding: 20px 0px 0px;
+}
+.feature-details .card-title{
+    font-size: 20px;
+}
+ .more-features h2{
+    padding: 10px 0px;
+} 
+.features .row{
+    padding:10px;
+}
+.more-features .card{
+    padding: 30px;
+    /* margin: 0px 0px 40px; */
+}
+.more-features .card img{
+    max-width: 30%;
+}
+/* end of section 8 */
+/* section 9 */
+.dummy-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 15px 40px;
+}
+.dummy-text h2{
+    padding: 0;
+    font-size: 28px;
+}
+.start-btn{
+    padding: 0;
+}
+/* end of section 9 */
+.side-img{
+    display: none;
+}
+.side-img-2{
+    display: none;
+}
+/* footer */
+footer{
+    padding: 30px 0px;
+}
+.footer-image-one {
+    height:70px;
+    margin-bottom: 20px;
+}
+.company-logo p{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.social-platforms{
+    padding-left: 10px;
+}
+.subscribe input{
+    width: -webkit-fill-available;
+}
+.subscribe .btn{
+    width: -webkit-fill-available;
+}
+/* end of footer */
+}
+
+@media screen and (max-width:480px) {
+    h2{
+        font-size: 28px;
+        padding: 20px 0px;
+    }
+    .header{
+        height: auto;
+    }
+    .buy{
+        display: none;
+    }
+    .header .col-lg-8{
+        display: none
+    }
+    .header-image{
+        padding-bottom: 200px;
+    }
+    .header-image img {
+        max-width: 100%;
+        height: 160px;
+        width: fit-content;
+    }
+    .header-content .row{
+        padding: 0px 0px;
+    }
+    .content{
+        text-align: center;
+    }
+    .icon-text{
+        padding: 0;
+        margin-right: 15px;
+    }
+    /* section 1 */
+    .side-image{
+        display: none;
+    }
+    .intro {
+        padding: 70px 0px 0px;
+    }
+    .back-ground{
+        padding: 200px 0px;
+    }
+    .inner-image-1 {
+        left: 20px;
+        top: 10px;
+    }
+    .inner-image-1 img {
+        max-width: 60%;
+      
+    }
+    .inner-image-2 {
+        left: 70px;
+        top: 100px;
+    }
+    .inner-image-2 img {
+        max-width: 90%;
+    }
+    .intro .context{
+        padding:60px 10px 40px;
+    }
+    /* section 1 */
+/* section 2 */
+.features{
+    padding: 60px 0px 0px;
+}
+.features .card{
+    padding: 0;
+    margin:20px 0;
+}
+/* end of section 2 */
+/* section 3 */
+.additional-features{
+    padding: 100px 30px;
+}
+.additional-features .context {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* end of section 3 */
+/* section 4 */
+
+.img-pos {
+    padding: 150px 20px;
+}
+.feature-image-1{
+    max-width: 90%;
+    right: -25px;
+}
+.feature-image-2{
+    top: 40px;
+    max-width: 85%;
+}
+/* end of section 4 */
+/* section 5 */
+.reviews{
+    padding: 130px 30px 80px;
+}
+.reviews .p-5{
+    padding: 15px !important;
+}
+.background{
+    text-align: center;
+}
+.background h2{
+    font-size: 22px;
+    margin: 20px 0px;
+}
+/* end of section 5 */
+/* section 7 */
+.pricing-context{
+    padding: 70px 0px;
+}
+.pricing-context .card{
+    margin:0 0 20px;
+    padding: 25px 35px 35px;
+}
+.pricing-context .card-body{
+    padding: 0;
+}
+.logos{
+    margin: 0 !important;
+}
+.logos .row{
+    padding: 0 !important;
+}
+    /* end of section 7 */
+.features .card{
+    padding: 0;
+}
+.feature-context h2{
+    padding: 20px 0px 0px;
+}
+.feature-details .card-title{
+    font-size: 20px;
+}
+ .more-features h2{
+    padding: 10px 0px;
+} 
+.features .row{
+    padding:10px;
+}
+.more-features .card{
+    padding: 30px;
+    /* margin: 0px 0px 40px; */
+}
+.more-features .card img{
+    max-width: 30%;
+}
+/* end of section 8 */
+/* section 9 */
+.dummy-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 15px 40px;
+}
+.dummy-text h2{
+    padding: 0;
+    font-size: 28px;
+}
+.start-btn{
+    padding: 0;
+}
+/* end of section 9 */
+.side-img{
+    display: none;
+}
+.side-img-2{
+    display: none;
+}
+/* footer */
+footer{
+    padding: 30px 0px;
+}
+.footer-image-one {
+    height:70px;
+    margin-bottom: 20px;
+}
+.company-logo p{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.social-platforms{
+    padding-left: 10px;
+}
+.subscribe input{
+    width: -webkit-fill-available;
+}
+.subscribe .btn{
+    width: -webkit-fill-available;
+}
+}
+
+@media screen and (max-width:768px){
+    h2{
+        font-size: 28px;
+        padding: 20px 0px;
+    }
+    .header{
+        height: auto;
+    }
+    .buy{
+        display: none;
+    }
+    .btn-primary{
+        padding: 15px 10px;
+    }
+    .header .col-lg-8{
+        display: none
+    }
+    .header-image{
+        padding-bottom: 200px;
+    }
+    .header-image img {
+        max-width: 100%;
+        height: 160px;
+        width: fit-content;
+    }
+    .header-content .row{
+        padding: 0px 0px;
+    }
+    .content{
+        text-align: center;
+    }
+    .icon-text{
+        padding: 0;
+        margin-right: 15px;
+    }
+    /* section 1 */
+    .side-image{
+        display: none;
+    }
+    .intro {
+        padding: 70px 0px 0px;
+    }
+    .back-ground{
+        padding: 180px 0px;
+    }
+    .inner-image-1 {
+        left: 20px;
+        top: 10px;
+    }
+    .inner-image-1 img {
+        max-width: 60%;
+      
+    }
+    .inner-image-2 {
+        left: 70px;
+        top: 100px;
+    }
+    .inner-image-2 img {
+        max-width: 60%;
+    }
+    .intro .context{
+        padding:60px 10px 40px;
+    }
+    /* section 1 */
+/* section 2 */
+.features{
+    padding: 60px 0px 0px;
+}
+.features .card{
+    padding: 0;
+    margin:20px 0;
+}
+/* end of section 2 */
+/* section 3 */
+.additional-features{
+    padding: 100px 30px;
+}
+.additional-features .context {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* end of section 3 */
+/* section 4 */
+
+.img-pos {
+    padding: 150px 20px;
+}
+.feature-image-1{
+    max-width: 90%;
+    right: -25px;
+}
+.feature-image-2{
+    top: 40px;
+    max-width: 85%;
+}
+/* end of section 4 */
+/* section 5 */
+.reviews{
+    padding: 130px 30px 80px;
+}
+.reviews .p-5{
+    padding: 15px !important;
+}
+.background{
+    text-align: center;
+}
+.background h2{
+    font-size: 22px;
+    margin: 20px 0px;
+}
+/* end of section 5 */
+/* section 7 */
+.pricing-context{
+    padding: 70px 0px;
+}
+.pricing-context .card{
+    margin:0 0 20px;
+    padding: 25px 35px 35px;
+}
+.pricing-context .card-body{
+    padding: 0;
+}
+.logos{
+    margin: 0 !important;
+}
+.logos .row{
+    padding: 0 !important;
+}
+    /* end of section 7 */
+.features .card{
+    padding: 0;
+}
+.feature-context h2{
+    padding: 20px 0px 0px;
+}
+.feature-details .card-title{
+    font-size: 20px;
+}
+ .more-features h2{
+    padding: 10px 0px;
+} 
+.features .row{
+    padding:10px;
+}
+.more-features .card{
+    padding: 30px;
+    /* margin: 0px 0px 40px; */
+}
+.more-features .card img{
+    max-width: 30%;
+}
+/* end of section 8 */
+/* section 9 */
+.dummy-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 15px 40px;
+}
+.dummy-text h2{
+    padding: 0;
+    font-size: 28px;
+}
+.start-btn{
+    padding: 0;
+}
+/* end of section 9 */
+.side-img{
+    display: none;
+}
+.side-img-2{
+    display: none;
+}
+/* footer */
+footer{
+    padding: 30px 0px;
+}
+.footer-image-one {
+    height:70px;
+    margin-bottom: 20px;
+}
+.company-logo p{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.social-platforms{
+    padding-left: 10px;
+}
+.subscribe input{
+    width: -webkit-fill-available;
+}
+.subscribe .btn{
+    width: -webkit-fill-available;
+    padding: 15px 65px;
+}
+.btn-link{
+    padding: 14px 24px;
+}
+}
+@media screen and (max-width:1024px) {
+    h2{
+        padding: 20px 0px;
+    }
+    .header-image img {
+        max-width: 100%;
+    }
+    .side-img{
+        display: none;
+    }
+    .feature-details{
+        margin-bottom: 60px;
+    }
+    .feature-details .card{
+        margin-bottom: 30px;
+    }
+    .feature-details img{
+        max-width: 50%;
+    }
+    .pricing .card{
+        margin-bottom: 20px;
+    }
+    .additional-features .context{
+        padding: 0;
+    }
+    .features{
+        padding-bottom: 0;
+    }
+    .dummy-text h2{
+        padding: 0;
+    }
+    .widgets .tasks {
+        padding: 10px;
+    }
+    .intro .context{
+        padding-left: 30px;
+    }
+    .card{
+        padding: 0;
+    }
+    .pricing .card{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .reviews img{
+        max-width: 50%;
+    }
+    .buy{
+        display: none;
+    }
+    /* .subscribe .btn{
+        padding: 15px 60px;
+    } */
+}
+
+/* ------------------------------END OF MEDIA QUERIES-------------------------- */
